@@ -1,0 +1,9 @@
+cpp-vim
+lightline.vim
+neobundle.vim
+neocomplete
+neocomplete-rsense.vim
+nerdtree
+tcomment_vim
+unite.vim
+vim-arduino-syntax

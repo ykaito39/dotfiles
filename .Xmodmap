@@ -1,0 +1,9 @@
+!X220のJIS配列限定のXmodmap
+
+!モディファイアキーの変更
+!Caps_Lockをlockグループから外し、controlグループに変更
+!remove lock = Caps_Lock
+add control = Caps_Lock
+
+!Alt_L -> control
+keycode 66 = Control_L
