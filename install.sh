@@ -1,7 +1,7 @@
 #!/bin/bash
 #動いたよ!!!
 
-FILES=( .vim .vimrc .zshrc .byobu .Xmodmap .bashrc)
+FILES=(.zshrc .byobu .Xmodmap .bashrc .vim .vimrc )
 
 echo ++++++++++++++++ linking ++++++++++++++++
 for file in ${FILES[@]}
@@ -12,5 +12,5 @@ done
 
 #neobundleのinstall
 #未検証
-echo ++++++++++++++++ install neobundle ++++++++++++++++
-git clone https://github.com/shougo/neobundle.vim .vim/bundle/
+#echo ++++++++++++++++ install neobundle ++++++++++++++++
+#git clone https://github.com/shougo/neobundle.vim .vim/bundle/
