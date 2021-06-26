@@ -2,11 +2,13 @@
 #動いたよ!!!
 
 FILES=(.zshrc .byobu .Xmodmap .bashrc .vim .vimrc )
+C_DIR="$(pwd)"
 
 echo ++++++++++++++++ linking ++++++++++++++++
 for file in ${FILES[@]}
-do
-	ln -snfv $HOME/dotfiles/$file $HOME/$file
+do 
+	chmod 655 $C_DIR/$file
+	ln -sfv $C_DIR/$file $HOME/$file
 
 done
 
