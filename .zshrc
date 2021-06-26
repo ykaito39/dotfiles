@@ -2,7 +2,12 @@ autoload -U compinit promptinit
 compinit				#補完機能
 promptinit				#プロンプトカラー
 
-alias ls='ls --color=auto'	#ls色付け
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	alias ls='ls -G'	#ls色付け
+else
+	alias ls='ls --color=auto'	#ls色付け
+fi
+
 setopt autopushd            # cdの履歴表示、cd - で一つ前のディレクトリへ
 setopt auto_cd              # ディレクトリ名のみでcd
 export EDITOR=vim           # エディタはvim
