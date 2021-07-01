@@ -6,6 +6,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	alias ls='ls -G'	#ls色付け
 else
 	alias ls='ls --color=auto'	#ls色付け
+	# startup command
+	xmodmap $HOME.Xmodmap
 fi
 
 setopt autopushd            # cdの履歴表示、cd - で一つ前のディレクトリへ
@@ -50,5 +52,4 @@ export RSENSE_HOME=/usr/src/rsense-0.3
 	  export PATH=${HOME}/.rbenv/bin:${PATH} && \
 	    eval "$(rbenv init -)"
 
-# startup command
-xmodmap /home/ell/.Xmodmap
+
