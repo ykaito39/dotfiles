@@ -53,3 +53,17 @@ export RSENSE_HOME=/usr/src/rsense-0.3
 	    eval "$(rbenv init -)"
 
 
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+test -f '/Users/ykaito/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/ykaito/Library/Preferences/netlify/helper/path.zsh.inc'
+
+
+function gitmain() {
+  git config --global user.name "ykaito39"
+  git config --global user.email "ykaito39@gmail.com"
+}
+
+function gitsub() {
+  git config --global user.name "heliumu-cub"
+  git config --global user.email "heliumu2525@gmail.com"
+}
